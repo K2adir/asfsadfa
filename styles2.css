@@ -1,0 +1,147 @@
+body {
+  background-color: rgba(52, 52, 52, 0.285);
+}
+.myname {
+  font-size: 8vw;
+  text-decoration: underline;
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+.container__boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem 1rem;
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+
+.container__boxes {
+  /* outline: 2px dashed blue; */
+  min-width: 80vw;
+}
+
+.container__boxes div {
+  outline: 2px dashed blue;
+  min-height: 20vh;
+  border-radius: 2rem;
+  /* max-width: 20vw; */
+}
+.container__boxes p {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.container__boxes_1 {
+  grid-area: a;
+  background-color: rgb(220, 220, 220, 0.8);
+}
+
+.container__boxes_2 {
+  grid-area: b;
+  background-color: rgba(189, 186, 186, 0.7);
+}
+
+.container__boxes_3 {
+  grid-area: c;
+  background-color: rgba(133, 133, 133, 0.6);
+}
+
+.container__boxes_4 {
+  grid-area: d;
+  background-color: rgba(92, 92, 92, 0.4);
+}
+
+/* /// boxes */
+
+.bottom__boxes {
+  width: 300px;
+  height: 200px;
+  border: 4px dashed black;
+  position: relative;
+}
+
+.bottom__boxes p {
+  padding-left: 1rem;
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* nav bar */
+
+#top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3b3b3b;
+  z-index: 999;
+}
+
+#top-navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+#top-navbar li {
+  list-style: none;
+}
+
+#top-navbar a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#top-navbar a:hover {
+  background-color: #444;
+}
+
+/* form ----------- */
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  border-radius: 1rem;
+}
+
+.button {
+  padding: 10px 30px;
+}
