@@ -1,1 +1,10 @@
 Hello.
+about.html
+day2.html
+day3.html
+day4.html
+day5.html
+img.jpg
+index.html
+styles.css
+styles2.css
